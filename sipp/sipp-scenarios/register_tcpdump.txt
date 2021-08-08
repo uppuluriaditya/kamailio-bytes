@@ -1,0 +1,48 @@
+08:49:26.241676 02:42:f6:44:2c:49 > 02:42:ac:12:00:02, ethertype IPv4 (0x0800), length 363: (tos 0x0, ttl 64, id 6032, offset 0, flags [DF], proto UDP (17), length 349)
+    172.18.0.1.5061 > 172.18.0.2.5060: [bad udp cksum 0x5982 -> 0xfa98!] SIP, length: 321
+	REGISTER sip:172.18.0.2 SIP/2.0
+	Via: SIP/2.0/UDP 172.18.0.1:5061;branch=z9hG4bK-692703-1-0
+	From: <sip:3000@192.168.0.106>;tag=1
+	To: <sip:3000@192.168.0.106>
+	Call-ID: 1-692703@172.18.0.1
+	CSeq: 1 REGISTER
+	Contact: sip:3000@172.18.0.1:5061
+	Max-Forwards: 10
+	Expires: 120
+	User-Agent: SIPp/Win32
+	Content-Length: 0
+	
+08:49:26.243065 02:42:ac:12:00:02 > 02:42:f6:44:2c:49, ethertype IPv4 (0x0800), length 391: (tos 0x10, ttl 64, id 42205, offset 0, flags [none], proto UDP (17), length 377)
+    172.18.0.2.5060 > 172.18.0.1.5061: [bad udp cksum 0x599e -> 0x249f!] SIP, length: 349
+	SIP/2.0 200 OK
+	Via: SIP/2.0/UDP 172.18.0.1:5061;branch=z9hG4bK-692703-1-0
+	From: <sip:3000@192.168.0.106>;tag=1
+	To: <sip:3000@192.168.0.106>;tag=9dd61ff61e802d8e2bef5f14621ef3c2.b64bc848
+	Call-ID: 1-692703@172.18.0.1
+	CSeq: 1 REGISTER
+	Contact: <sip:3000@172.18.0.1:5061>;expires=120
+	Server: kamailio (5.3.3 (x86_64/linux))
+	Content-Length: 0
+	
+08:49:26.243622 02:42:f6:44:2c:49 > 02:42:ac:12:00:02, ethertype IPv4 (0x0800), length 386: (tos 0x0, ttl 64, id 6033, offset 0, flags [DF], proto UDP (17), length 372)
+    172.18.0.1.5061 > 172.18.0.2.5060: [bad udp cksum 0x5999 -> 0x9f23!] SIP, length: 344
+	BYE sip:3000@192.168.0.106 SIP/2.0
+	Via: SIP/2.0/UDP 172.18.0.1:5061;branch=z9hG4bK-692703-1--1
+	From: <sip:3000@192.168.0.106>;tag=1
+	To: <sip:3000@192.168.0.106>;tag=9dd61ff61e802d8e2bef5f14621ef3c2.b64bc848
+	Call-ID: 1-692703@172.18.0.1
+	CSeq: 2 BYE
+	Max-Forwards: 70
+	Contact: <sip:sipp@172.18.0.1:5061;transport=UDP>
+	Content-Length: 0
+	
+08:49:26.244661 02:42:ac:12:00:02 > 02:42:f6:44:2c:49, ethertype IPv4 (0x0800), length 351: (tos 0x10, ttl 64, id 42206, offset 0, flags [none], proto UDP (17), length 337)
+    172.18.0.2.5060 > 172.18.0.1.5061: [bad udp cksum 0x5976 -> 0x0281!] SIP, length: 309
+	SIP/2.0 501 Not Implemented
+	Via: SIP/2.0/UDP 172.18.0.1:5061;branch=z9hG4bK-692703-1--1
+	From: <sip:3000@192.168.0.106>;tag=1
+	To: <sip:3000@192.168.0.106>;tag=9dd61ff61e802d8e2bef5f14621ef3c2.b64bc848
+	Call-ID: 1-692703@172.18.0.1
+	CSeq: 2 BYE
+	Server: kamailio (5.3.3 (x86_64/linux))
+	Content-Length: 0

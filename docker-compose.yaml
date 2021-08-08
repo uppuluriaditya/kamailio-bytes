@@ -1,0 +1,20 @@
+version: "3"
+services:
+    kamailio1:
+        image: kamailio:latest
+        container_name: kamailio
+        network_mode: bridge
+        # ports:
+        #     - 5060:5060
+    sip-tester1:
+        image: sip-tester:latest
+        container_name: sip-tester1
+        network_mode: bridge
+        depends_on: 
+            - kamailio1
+    # sip-tester2:
+    #     image: sip-tester:latest
+    #     container_name: sip-tester2
+    #     network_mode: bridge
+    #     depends_on: 
+    #         - kamailio1

@@ -1,0 +1,7 @@
+SIP Register:
+sipp 172.18.0.2 -sf ~/sipp-scenarios/REGISTER_client.xml -inf ~/sipp-scenarios/REGISTER_client.csv -m 1 -l 1 -trace_msg -trace_err
+
+
+sipp 172.18.0.2 -sf ~/sipp-scenarios/INVITE_CANCEL.xml -recv_timeout 10000 -m 1 -l 1
+
+sipp 172.18.0.2 -sf ~/sipp-scenarios/REGISTER_INVITE_client.xml -inf ~/sipp-scenarios/REGISTER_INVITE_client.csv -m 100 -l 2 -r 1 -rp 10000
